@@ -119,9 +119,9 @@ header .container .user .image .dropdown-content {
 
     display: inline-block;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.726);
     margin-top: .7vh;
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(156, 154, 154, 0.171);
     z-index: 1;
     visibility: hidden;
@@ -139,7 +139,7 @@ header .container .user .image:hover .dropdown-content {
     visibility: visible;
     transition: .7s ease;
     color: white;
-    margin-left: -7vh;
+    margin-left: -8vh;
 }
 header .container .user .image:hover .dropdown-content a {
     
@@ -156,6 +156,18 @@ header .container .user .image:hover .dropdown-content  .dropbtn {
     background-color: #3e8e41;
 }
 
+header .container .user .image:hover .dropdown-content  .autenticacao {
+    
+    width: 100%;
+    height: auto;
+    border-top: .3px solid rgba(130, 136, 130, 0.404);
+}
+header .container .user .image:hover .dropdown-content  .contas {
+    
+    width: 100%;
+    height: 5vh;
+    border-top: .3px solid rgba(130, 136, 130, 0.404);
+}
 
 header .container .user .dropdown {
 
@@ -206,11 +218,12 @@ header .container a:hover {
 .container-principal {
 
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     font-size: 20px;
-    background-image: url('./assets/back-2.jpg');
+    background-image: url('./assets/images/thumb-1920-1198811.jpeg');
     background-position: center;
     background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +235,10 @@ header .container a:hover {
 
 .container-principal .titulo {
 
+    width: 60%;
     font-size: 45px;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
     font-family: 'Gotham', sans-serif;
     font-weight: bold;
 }
@@ -237,6 +253,8 @@ header .container a:hover {
 }
 .container-principal .btn {
 
+    width: 300px;
+    height: 50px;
     background-color: rgba(0, 0, 0, .50);
     font-family: 'Gotham', sans-serif;
     border: none;
@@ -244,7 +262,7 @@ header .container a:hover {
     padding: 15px 30px;
     border-radius: 5px;
     margin-right: 15px;
-    margin-left: 1vh;
+    margin-left: 5vh;
     font-size: 13px;
     cursor: pointer;
 }
@@ -259,7 +277,6 @@ header .container a:hover {
     width: 100%;
     height: 50vh;
     margin-top: -10vh;
-
 
 }
 .carrousel-filmes .owl-carousel {
@@ -289,7 +306,7 @@ header .container a:hover {
 
     width: 100%;
     height: 50vh;
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 .carrousel-progress .title {
 
