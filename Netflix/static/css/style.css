@@ -1,0 +1,559 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --vermelho: #db0000;
+    --preto: #000000
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+header .container {
+
+    width: 100%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Gotham', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-left: 2vh;
+}
+header .container nav {
+
+    margin-left: 5vh;
+}
+header .container .user {
+
+    width: 300px;
+    height: 5vh;
+
+    justify-content: end;
+    margin-left: 85vh;
+    margin-right: 5vh;
+    display: flex;
+}
+header .container .user .image {
+
+    width: 20%;
+    margin-right: 7vh;
+    height: 100%;
+
+
+}
+header .container .user .image img {
+
+    width: 35px;
+    margin-top: .5vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header .container .user .image .dropdown-content {
+
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.726);
+    margin-top: .7vh;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(156, 154, 154, 0.171);
+    z-index: 1;
+    visibility: hidden;
+}
+header .container .user .image .dropdown-content a {
+    
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .container .user .image:hover .dropdown-content {
+    visibility: visible;
+    transition: .7s ease;
+    color: white;
+    margin-left: -8vh;
+}
+header .container .user .image:hover .dropdown-content a {
+    
+    color: white;
+    align-self: center;
+
+}
+header .container .user .image:hover .dropdown-content img {
+    width: 25px;
+
+
+}
+header .container .user .image:hover .dropdown-content  .dropbtn {
+    background-color: #3e8e41;
+}
+
+header .container .user .image:hover .dropdown-content  .autenticacao {
+    
+    width: 100%;
+    height: auto;
+    border-top: .3px solid rgba(130, 136, 130, 0.404);
+}
+header .container .user .image:hover .dropdown-content  .contas {
+    
+    width: 100%;
+    height: 5vh;
+    border-top: .3px solid rgba(130, 136, 130, 0.404);
+}
+
+header .container .user .dropdown {
+
+    width: 20%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+
+
+}
+
+
+header .container .user .dropdown img {
+
+    width: 45px;
+    margin-right: 5vh;
+    cursor: pointer;
+}
+
+header .container .user .search {
+
+    width: 30%;
+    margin-left: 2vh;
+
+}
+
+
+header .container .user .search img {
+
+    width: 45px;
+    margin-right: 2vh;
+    cursor: pointer;
+}
+
+
+header .container a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-family: 'Gotham', sans-serif;
+}
+header .container a:hover {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+
+}
+
+.container-principal {
+
+    width: 100%;
+    height: 90vh;
+    font-size: 20px;
+    background-image: url('./backimage.jpeg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+
+.container-principal .titulo {
+
+    width: 60%;
+    font-size: 45px;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+}
+
+
+.container-principal .descricao {
+
+    width: 55%;
+    margin-top: 5vh;
+    margin-bottom: 100px;
+    font-family: 'Gotham', sans-serif;
+}
+.container-principal .btn {
+
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .50);
+    font-family: 'Gotham', sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-left: 5vh;
+    font-size: 13px;
+    cursor: pointer;
+}
+.container-principal .btn:hover {
+
+    background-color: rgba(0, 0, 0, 0.897);
+    transition: .2s ease-in-out;
+}
+
+.carrousel-filmes {
+
+    width: 100%;
+    height: 50vh;
+    margin-top: -10vh;
+
+}
+.carrousel-filmes .owl-carousel {
+
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(#3b639b);
+
+}
+.carrousel-filmes .owl-carousel .item {
+
+    width: 98%;
+    height: 50vh;
+    background-color: black;
+    
+}
+.carrousel-filmes .owl-carousel .item img {
+    
+    width: 100%;
+    height: 50vh;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.carrousel-progress {
+
+    width: 100%;
+    height: 50vh;
+    margin-top: 20vh;
+}
+.carrousel-progress .title {
+
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+.carrousel-progress  .owl-carousel {
+
+    width: 98%;
+    height: 30vh;
+    margin-left: auto;
+
+}
+.carrousel-progress  .owl-carousel .item {
+
+    width: 100%;
+    height: 25vh;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 5vh;
+    
+}
+.carrousel-progress  .owl-carousel .progresso {
+
+    width: 70%;
+    margin-top: 1vh;
+    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    height: .5vh;
+    position: absolute;
+    background-color: rgba(78, 74, 74, 0.747);
+}
+.carrousel-progress  .owl-carousel .progresso .porcentagem-80{
+
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 5, 5, 0.747);
+}
+.carrousel-progress  .owl-carousel .progresso .porcentagem-50{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 5, 5, 0.747);
+}
+.carrousel-progress  .owl-carousel .progresso .porcentagem-25{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 5, 5, 0.747);
+}
+
+.carrousel-progress  .owl-carousel .item img {
+    
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.carrousel-filmes-categoria {
+
+    width: 100%;
+    height: 30vh;
+}
+.carrousel-filmes-categoria .title {
+
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+.carrousel-filmes-categoria  .owl-carousel {
+
+    width: 98%;
+    height: 20vh;
+    margin-left: auto;
+
+    background: linear-gradient(#3b639b);
+
+}
+.carrousel-filmes-categoria  .owl-carousel .item {
+
+    width: 90%;
+    height: 20vh;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.carrousel-filmes-categoria  .owl-carousel .item img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.carrousel-filmes-filmes {
+
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vh;
+}
+.carrousel-filmes-filmes .title {
+
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+.carrousel-filmes-filmes  .owl-carousel {
+
+    width: 98%;
+    height: 30vh;
+    margin-left: auto;
+    background: linear-gradient(#3b639b);
+
+}
+.carrousel-filmes-filmes  .owl-carousel .item {
+
+    width: 90%;
+    height: 20vh;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.carrousel-filmes-filmes  .owl-carousel .item img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.carrousel-filmes-doc {
+
+    width: 100%;
+    height: 30vh;
+    margin-top: 5vh;
+}
+.carrousel-filmes-doc .title {
+
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+}
+.carrousel-filmes-doc  .owl-carousel {
+
+    width: 98%;
+    height: 50vh;
+    margin-left: auto;
+    background: linear-gradient(#3b639b);
+
+}
+.carrousel-filmes-doc  .owl-carousel .item {
+
+    width: 90%;
+    height: 20vh;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.carrousel-filmes-doc  .owl-carousel .item img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+.container-user {
+    
+    width: 80%;
+    height: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    display: flex;
+}
+
+.container-user .box {
+    
+    width: 100%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5vh;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+
+.container-user .box .user {
+    
+    width: 70%;
+    height: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    background-color: rgb(72, 255, 0);
+    cursor: pointer;
+
+}
+.container-user .box .user:hover {
+    
+    border: 2px solid white;
+
+}
+.container-user h2 {
+    width: 100%;
+    position: absolute;
+    font-family: 'Gotham', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 7%;
+    margin-right: 7%;
+
+
+}
+.container-user .box .user img {
+    
+    width: 100%;
+    height: 100%;
+
+}
+.container-user .box h2 {
+    
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    margin-top: 2vh;
+    position: relative;
+    text-align: center;
+    margin-left: 4vh;
+
+}

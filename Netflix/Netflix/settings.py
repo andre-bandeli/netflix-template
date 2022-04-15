@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'page',
 ]
 
@@ -38,7 +39,7 @@ ROOT_URLCONF = 'Netflix.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -102,5 +103,5 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
-LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "/login"
+LOGIN_REDIRECT_URL = "/usuarios"
+LOGOUT_REDIRECT_URL = "/"
