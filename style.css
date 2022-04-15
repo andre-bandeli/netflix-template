@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --vermelho: #db0000;
+    --preto: #000000
+}
+
+body {
+    background-color: var(--preto);
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+header .container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 2vh;
+
+}
+header .container a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+header .container a:hover {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-principal {
+
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+    background-image: url('./assets/bojack.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container-principal .titulo {
+
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.container-principal .descricao {
+
+    margin-top: 1vh;
+    width: 55%;
+    margin-bottom: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-principal .btn {
+
+    background-color: rgba(0, 0, 0, .50);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-left: 1vh;
+    font-size: 12px;
+    cursor: pointer;
+}
+.container-principal .btn:hover {
+
+    background-color: rgba(0, 0, 0, 0.897);
+    transition: .2s ease-in-out;
+
+}
+
+
+
