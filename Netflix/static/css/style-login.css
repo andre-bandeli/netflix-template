@@ -194,3 +194,12 @@ header .container .logo {
     transition: .4s ease-in-out;
 
 }
+
+.controls .textinput {
+
+
+    width: 60%;
+    height: 3vh;
+    background-color: red;
+    margin-left: 10vh;
+}
