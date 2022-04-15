@@ -12,7 +12,7 @@ CSS e JavaScript.
 ### Ferramentas utilizadas
 
 - Django
-- API Rest
+- Python
 - JavaScript
 - css
 - html5
