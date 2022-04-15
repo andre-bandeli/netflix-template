@@ -1,0 +1,205 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --vermelho: #db0000;
+    --preto: #000000
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    background-image: url('./back-login-2.jpg');
+    background-size: cover;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+header .container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Gotham', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    margin-top: 1vh;
+    margin-left: 2vh;
+}
+
+.container-forms {
+
+    width: 60vh;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.61);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    border-radius: 15px;
+    
+}
+.container-forms h2 {
+
+    width: 80%;
+    margin-left: 10vh;
+    margin-top: 7vh;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+
+}
+.container-forms h3 {
+
+    width: 80%;
+    margin-left: 17vh;
+    margin-right: 17vh;
+    margin-top: 7vh;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+
+}
+.container-forms .in{
+
+    width: 65%;
+    height: 4vh;
+    background-color: rgba(52, 54, 52, 0.63);
+    border: none;
+    border-bottom: 1px solid rgba(216, 202, 8, 0.753);
+    border-radius: 5px;
+    margin-left: 10vh;
+    margin-top: 5vh;
+
+}
+.container-forms .btn{
+
+    width: 65%;
+    height: 5vh;
+    background-color: rgba(255, 0, 0, 0.747);
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    cursor: pointer;
+
+}
+.container-forms .btn:hover{
+
+    background-color: rgba(255, 0, 0, 0.979);
+    transition: .4s ease-in-out;
+
+}
+.container-forms .btn-cadastrar{
+
+    width: 65%;
+    height: 5vh;
+    background-color: rgba(9, 194, 218, 0.527);
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10vh;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+.container-forms .btn-cadastrar:hover {
+
+    background-color: rgba(9, 194, 218, 0.705);
+    transition: .4s ease-in-out;
+}
+
+.container-forms .btn-google{
+
+    width: 65%;
+    height: 5vh;
+    background-color: rgba(226, 223, 25, 0.473);
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+.container-forms .btn-google:hover {
+
+    background-color: rgba(216, 213, 15, 0.918);
+    transition: .4s ease-in-out;
+
+}
+
+.controls .textinput {
+
+
+    width: 60%;
+    height: 3vh;
+    background-color: red;
+    margin-left: 10vh;
+}
