@@ -610,3 +610,32 @@ header .container a:hover {
     margin-left: 4vh;
 
 }
+
+.footer {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    height: 20vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.425);
+
+}
+
+.footer .container {
+
+    display: flex;
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gotham', sans-serif;
+    align-items: center;
+
+}
+.footer .container  h2{
+
+    margin-top: 5vh;
+    font-weight: 100;
+    text-align:center;
+
+}
