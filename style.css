@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -95,26 +97,32 @@ header .container a:hover {
     width: 100%;
     height: 70vh;
     font-size: 20px;
-    background-image: url('./assets/bojack.png');
+    background-image: url('./assets/back-2.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
+
+
+
 .container-principal .titulo {
 
     font-size: 45px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    position: absolute;
+    z-index: 15000;
 }
 
 
 .container-principal .descricao {
 
-    margin-top: 1vh;
     width: 55%;
+    margin-top: 5vh;
     margin-bottom: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -141,6 +149,7 @@ header .container a:hover {
 
     width: 100%;
     height: 50vh;
+    margin-top: 1vh;
 
 
 }
@@ -148,6 +157,7 @@ header .container a:hover {
 
     width: 100%;
     height: 50vh;
+    background: linear-gradient(#3b639b);
 
 }
 .carrousel-filmes .owl-carousel .item {
@@ -165,3 +175,41 @@ header .container a:hover {
 }
 
 
+.carrousel-filmes-categoria {
+
+    width: 100%;
+    height: 50vh;
+    margin-top: 30vh;
+}
+.carrousel-filmes-categoria .title {
+
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 10vh;
+    margin-bottom: 2vh;
+}
+.carrousel-filmes-categoria  .owl-carousel {
+
+    width: 90%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(#3b639b);
+
+}
+.carrousel-filmes-categoria  .owl-carousel .item {
+
+    width: 90%;
+    height: 20vh;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.carrousel-filmes-categoria  .owl-carousel .item img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
