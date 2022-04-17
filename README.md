@@ -27,14 +27,10 @@ senha: root
 ### Para rodar o projeto:
 obs: instale as dependências necessárias!
 
-ative sua virtual env
-pip install -r requirements.txt
-rode os comandos de migração: python manage.py migrate e python manage.py makemigrations
-inicie o servidor local: python manage.py runserver
-Criação de Usuários
-Crie um superusuário com o comando: python manage.py createsuperuser
-Deploy da aplicação
-Para realizar o deploy do projeto, rode o comando: npm run build
+- ative sua virtual env
+- pip install -r requirements.txt
+- rode os comandos de migração: python manage.py migrate e python manage.py makemigrations
+- inicie o servidor local: python manage.py runserver
 
 ### Features Adicionais
 
