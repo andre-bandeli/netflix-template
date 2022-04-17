@@ -36,16 +36,16 @@ Crie um superusuário com o comando: python manage.py createsuperuser
 Deploy da aplicação
 Para realizar o deploy do projeto, rode o comando: npm run build
 
-### Features
+### Features Adicionais
 
 - Implementação do Django
 - Sistema de autenticação
 - Sistema de rotas
+- deploy com Heroku
 
 ### Features à implementar
 
 - API Google auth
-- deploy com Heroku
 
 ![002 (2)](https://user-images.githubusercontent.com/87938869/163597791-524a446e-d388-47d9-9fb4-52a14b57a378.jpg)
 ![04 (1)](https://user-images.githubusercontent.com/87938869/163597677-7a2f41f7-f716-46c7-a1ca-2e0a5eeb1150.jpg)
