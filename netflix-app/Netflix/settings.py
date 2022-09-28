@@ -4,9 +4,7 @@ from pathlib import Path
 import os
 import django_heroku
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^ws7znzv3$yv8dcgvqvitpguv+#u%gwgx2x^)o^5m-f7eg$p87'
 
 
@@ -64,7 +62,7 @@ WSGI_APPLICATION = 'Netflix.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
@@ -102,8 +100,8 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR, "static"]
+STATIC_ROOT = "staticfiles"
 
 
 LOGIN_REDIRECT_URL = "/usuarios"
