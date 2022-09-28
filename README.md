@@ -8,12 +8,13 @@
 
 Este projeto consiste em recriar a estrutura do frontend do site da Netflix. Os objetivos desta atividade visam por em prática os conceitos estudados de Html, CSS, JavaScrip e Django, roteamento de URLS, autenticação e autorização e padrão MVC.
 
+
+
+
 ### Deploy Heroku
 
-https://netflix-template-heroku.herokuapp.com/
+https://netflix-app-django.herokuapp.com/user
 
-user: root
-senha: root
 
 ### Ferramentas utilizadas
 
