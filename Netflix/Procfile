@@ -1,2 +1,2 @@
 
-web: gunicorn Netflix.settings
+web: gunicorn Netflix.wsgi
