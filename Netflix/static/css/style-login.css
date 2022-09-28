@@ -111,6 +111,7 @@ header .container .logo {
     font-size: 30px;
     display: inline-block;
 
+
 }
 .container-forms h3 {
 
@@ -194,12 +195,23 @@ header .container .logo {
     transition: .4s ease-in-out;
 
 }
-
-.controls .textinput {
-
-
-    width: 60%;
-    height: 3vh;
-    background-color: red;
+.form-group-user, .form-group-pass {
+    width: 30%;
+    height: 5vh;
+    font-family: 'Gotham', sans-serif;
     margin-left: 10vh;
+    margin-top: 2vh;
+    font-size: 20px;
+}
+
+.form-group h5 {
+    font-size: 15px;
+    margin-left: 15vh;
+    margin-top: 3vh;
+    font-family: 'Gotham', sans-serif;
+}
+.form-group-user input, .form-group-pass input {
+   width: 350px;
+   height: 3vh;
+   margin-top: 1vh;
 }
