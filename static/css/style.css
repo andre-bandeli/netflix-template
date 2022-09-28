@@ -58,19 +58,19 @@ body {
     color: white;
 }
 
-header {
+#navbar {
     width: 100%;
-    height: 7vh;
+    height: 10vh;
     margin-bottom: 2vh;
     position: fixed;
     z-index: 10000;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
-header .container {
+#navbar .container {
 
     width: 100%;
-    margin-top: 1vh;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,18 +79,20 @@ header .container {
     
 }
 
-header .container .logo {
+#navbar .container .logo {
     color: var(--vermelho);
     font-family: 'Gotham', sans-serif;
     font-size: 40px;
     font-weight:900;
     margin-left: 2vh;
 }
-header .container nav {
+#navbar .container .navbar-desktop {
 
     margin-left: 5vh;
 }
-header .container .user {
+
+
+#navbar .container .user {
 
     width: 300px;
     height: 5vh;
@@ -100,7 +102,7 @@ header .container .user {
     margin-right: 5vh;
     display: flex;
 }
-header .container .user .image {
+#navbar .container .user .image {
 
     width: 20%;
     margin-right: 7vh;
@@ -108,14 +110,14 @@ header .container .user .image {
 
 
 }
-header .container .user .image img {
+#navbar .container .user .image img {
 
     width: 35px;
     margin-top: .5vh;
     border-radius: 5px;
     cursor: pointer;
 }
-header .container .user .image .dropdown-content {
+#navbar .container .user .image .dropdown-content {
 
     display: inline-block;
     position: relative;
@@ -126,7 +128,7 @@ header .container .user .image .dropdown-content {
     z-index: 1;
     visibility: hidden;
 }
-header .container .user .image .dropdown-content a {
+#navbar .container .user .image .dropdown-content a {
     
     color: black;
     font-size: 12px;
@@ -135,58 +137,56 @@ header .container .user .image .dropdown-content a {
     display: block;
 }
 
-header .container .user .image:hover .dropdown-content {
+#navbar .container .user .image:hover .dropdown-content {
     visibility: visible;
     transition: .7s ease;
     color: white;
     margin-left: -8vh;
 }
-header .container .user .image:hover .dropdown-content a {
+#navbar .container .user .image:hover .dropdown-content a {
     
     color: white;
     align-self: center;
 
 }
-header .container .user .image:hover .dropdown-content img {
+#navbar .container .user .image:hover .dropdown-content img {
     width: 25px;
 
 
 }
-header .container .user .image:hover .dropdown-content  .dropbtn {
+#navbar .container .user .image:hover .dropdown-content  .dropbtn {
     background-color: #3e8e41;
 }
 
-header .container .user .image:hover .dropdown-content  .autenticacao {
+#navbar .container .user .image:hover .dropdown-content  .autenticacao {
     
     width: 100%;
     height: auto;
     border-top: .3px solid rgba(130, 136, 130, 0.404);
 }
-header .container .user .image:hover .dropdown-content  .contas {
+#navbar .container .user .image:hover .dropdown-content  .contas {
     
     width: 100%;
     height: 5vh;
     border-top: .3px solid rgba(130, 136, 130, 0.404);
 }
 
-header .container .user .dropdown {
+#navbar .container .user .dropdown {
 
     width: 20%;
     margin-left: 2vh;
     margin-right: 2vh;
-
-
 }
 
 
-header .container .user .dropdown img {
+#navbar .container .user .dropdown img {
 
     width: 45px;
     margin-right: 5vh;
     cursor: pointer;
 }
 
-header .container .user .search {
+#navbar .container .user .search {
 
     width: 30%;
     margin-left: 2vh;
@@ -194,7 +194,7 @@ header .container .user .search {
 }
 
 
-header .container .user .search img {
+#navbar .container .user .search img {
 
     width: 45px;
     margin-right: 2vh;
@@ -202,17 +202,25 @@ header .container .user .search img {
 }
 
 
-header .container a {
+#navbar .container a {
     text-decoration: none;
     color: white;
     margin-right: 20px;
     font-family: 'Gotham', sans-serif;
 }
-header .container a:hover {
+#navbar .container a:hover {
     text-decoration: none;
     color: #fff;
     margin-right: 20px;
 
+}
+
+
+@media (max-width: 768px) {
+    #navbar .container .navbar-desktop {
+        visibility: hidden;
+    }
+    
 }
 
 .container-principal {
@@ -230,8 +238,6 @@ header .container a:hover {
     align-items: flex-start;
 
 }
-
-
 
 .container-principal .titulo {
 
@@ -272,12 +278,33 @@ header .container a:hover {
     transition: .2s ease-in-out;
 }
 
+@media (max-width: 710px) {
+    
+.container-principal .btn {
+    margin-top: 2vh;
+}
+}
+
 .carrousel-filmes {
 
     width: 100%;
     height: 50vh;
     margin-top: -10vh;
 
+}
+
+@media (max-width: 550px) {
+    .carrousel-filmes {
+        margin-top: -7vh;
+        height: 60vh;
+    background-color: rgba(0, 0, 0, 0.39);
+    
+    }
+    .carrousel-filmes .owl-carousel .item {
+
+       margin-top: 5vh;
+        
+    }
 }
 .carrousel-filmes .owl-carousel {
 
@@ -300,6 +327,19 @@ header .container a:hover {
     border-radius: 20px ;
     
 }
+
+@media (max-width: 550px) {
+    .carrousel-filmes .owl-carousel .item {
+        margin-left: 10vh;
+        border-radius: 15px;
+        width: 75%;
+        
+    }
+    .carrousel-filmes .owl-carousel .item img {
+    
+       border-radius: 25px;
+    }
+}
 .carrousel-filmes .owl-carousel .item img {
     
     width: 100%;
@@ -318,7 +358,7 @@ header .container a:hover {
 
     width: 100%;
     height: 50vh;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .carrousel-progress .title {
 
@@ -343,6 +383,15 @@ header .container a:hover {
     display: inline-block;
     margin-bottom: 5vh;
     
+}
+
+@media (max-width: 550px) {
+    .carrousel-progress  .owl-carousel .item {
+        width: 85%;
+        height: 50vh;
+        margin-left: 5%;
+        
+    }
 }
 .carrousel-progress  .owl-carousel .progresso {
 
@@ -386,7 +435,7 @@ header .container a:hover {
 
     width: 100%;
     height: 30vh;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 .carrousel-filmes-categoria .title {
 
@@ -399,7 +448,7 @@ header .container a:hover {
 .carrousel-filmes-categoria  .owl-carousel {
 
     width: 98%;
-    height: 20vh;
+    height: 25vh;
     margin-left: auto;
 
     background: linear-gradient(#3b639b);
@@ -412,6 +461,20 @@ header .container a:hover {
     background-color: black;
     border-radius: 10px;
     
+}
+
+@media (max-width: 550px) {
+    .carrousel-filmes-categoria {
+        height: 45vh;
+        margin-top: 25vh;
+    }
+    .carrousel-filmes-categoria  .owl-carousel {
+        height: 40vh;
+    }
+    .carrousel-filmes-categoria  .owl-carousel .item {
+        margin-left: 4%;
+        height: 40vh;
+    }
 }
 .carrousel-filmes-categoria  .owl-carousel .item img {
     
@@ -426,7 +489,7 @@ header .container a:hover {
 
     width: 100%;
     height: 30vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 .carrousel-filmes-filmes .title {
 
@@ -452,6 +515,21 @@ header .container a:hover {
     border-radius: 10px;
     
 }
+
+@media (max-width: 550px) {
+    
+.carrousel-filmes-filmes {
+
+
+    height: 45vh;
+    margin-top: 25vh;
+    }
+    .carrousel-filmes-filmes  .owl-carousel .item {
+        margin-left: 4%;
+       height: 45vh;
+        
+    }
+}
 .carrousel-filmes-filmes  .owl-carousel .item img {
     
     width: 100%;
@@ -461,13 +539,11 @@ header .container a:hover {
 
 }
 
-
-
 .carrousel-filmes-f {
 
     width: 100%;
     height: 30vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 .carrousel-filmes-f  .title {
 
@@ -493,6 +569,21 @@ header .container a:hover {
     border-radius: 10px;
     
 }
+
+@media (max-width: 550px) {
+    
+.carrousel-filmes-f {
+
+    height: 45vh;
+    margin-top: 25vh;
+}
+.carrousel-filmes-f   .owl-carousel .item {
+
+    height: 45vh;
+    margin-left: 4%;
+    
+}
+}
 .carrousel-filmes-f   .owl-carousel .item img {
     
     width: 100%;
@@ -506,7 +597,7 @@ header .container a:hover {
 
     width: 100%;
     height: 30vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 .carrousel-filmes-doc .title {
 
@@ -531,6 +622,20 @@ header .container a:hover {
     background-color: black;
     border-radius: 10px;
     
+}
+
+@media (max-width: 550px) {
+    
+    .carrousel-filmes-doc {
+        height: 45vh;
+        margin-top: 25vh;
+    }
+    .carrousel-filmes-doc  .owl-carousel .item {
+
+        height: 45vh;
+        margin-left: 4%;
+        
+    }
 }
 .carrousel-filmes-doc  .owl-carousel .item img {
     
@@ -612,9 +717,15 @@ header .container a:hover {
 
 }
 
+.owl-prev {
+    width: 5%;
+    margin-left: 45%;
+    margin-top: 2vh;
+}
+
 .footer {
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-bottom: 0vh;
     height: 15vh;
     position: relative;
@@ -640,3 +751,4 @@ header .container a:hover {
     margin: auto;
 
 }
+
